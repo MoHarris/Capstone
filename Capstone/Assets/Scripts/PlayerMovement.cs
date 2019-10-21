@@ -15,11 +15,12 @@ public class PlayerMovement : MonoBehaviour
 
     private bool forward = true;
 
-    private bool isGrounded;
+    protected bool isGrounded;
     public Transform groundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
     private float originalGravityScale;
+    public bool isGliding;
     
 
     // Start is called before the first frame update
@@ -27,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         originalGravityScale = rb.gravityScale;
-        
+        isGliding = false;
     }
    
     // Update is called once per frame
@@ -63,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
             if (glideMeter > 0)
             {
                 glideMeter = glideMeter - 1;
+                isGliding = true;
             }
 
 
@@ -70,6 +72,8 @@ public class PlayerMovement : MonoBehaviour
 
         else
         {
+            isGliding = false;
+
             rb.gravityScale = originalGravityScale;
 
             if (glideMeter < 100)

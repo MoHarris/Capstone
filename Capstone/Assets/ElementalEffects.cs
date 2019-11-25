@@ -19,14 +19,17 @@ public class ElementalEffects : MonoBehaviour
     {
         type = this.tag;
         areaEffector = gameObject.GetComponent<AreaEffector2D>();
+        /*
         angle = Mathf.Atan2(p2.position.y - p1.position.y, p2.position.x - p1.position.x) * 180 / Mathf.PI;
-        areaEffector.forceAngle = angle;
+        areaEffector.forceAngle = angle - 25;
+        */
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        angle = Mathf.Atan2(p2.position.y - rb.position.y, p2.position.x - rb.position.x) * 180 / Mathf.PI;
+        areaEffector.forceAngle = angle;
     }
 
    void OnTriggerStay2D(Collider2D other)

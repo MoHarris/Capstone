@@ -2005,7 +2005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1869468101}
-  cameraDistance: 5
+  cameraDistance: 1
 --- !u!1001 &928924072
 PrefabInstance:
   m_ObjectHideFlags: 0

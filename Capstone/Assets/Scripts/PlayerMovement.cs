@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("TestMovement");
+            SceneManager.LoadScene("Lvl2");
         }
     }
 

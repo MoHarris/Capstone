@@ -71,6 +71,14 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+        if (Input.GetKey(KeyCode.DownArrow) && !isGrounded)
+        {
+            //rb.velocity = Vector2.up * -jumpForce;
+            rb.gravityScale = originalGravityScale * 2;
+
+
+        }
+
         else
         {
             isGliding = false;

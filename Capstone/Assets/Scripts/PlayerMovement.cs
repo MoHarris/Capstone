@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask whatIsGround;
     private float originalGravityScale;
     public bool isGliding;
-    
+    //Scene scene = SceneManager.GetActiveScene();
 
     // Start is called before the first frame update
     void Start()
@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("Lvl2");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 

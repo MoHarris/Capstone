@@ -87,7 +87,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6468464759837156856}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: -4.53, y: -1.28, z: 0}
   m_LocalScale: {x: 25.911467, y: 7.977322, z: 1}
   m_Children:
@@ -95,7 +95,7 @@ Transform:
   - {fileID: 6468464757794143961}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &6468464759837156857
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -131,11 +131,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 872562011
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f7704d068135f0439f78b434af560a5, type: 3}
-  m_Color: {r: 0.38812745, g: 0.9245283, b: 0.7224913, a: 1}
+  m_Color: {r: 0.38812745, g: 0.9245283, b: 0.7224913, a: 0.3647059}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -198,7 +198,7 @@ AreaEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
   m_UseGlobalAngle: 1
   m_ForceAngle: 0
   m_ForceMagnitude: 500

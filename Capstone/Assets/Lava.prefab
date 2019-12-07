@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1599329037860101931}
   - component: {fileID: 6024303397927995162}
   - component: {fileID: 6024303397927995161}
+  - component: {fileID: -1028288071339526624}
   m_Layer: 0
   m_Name: Lava
   m_TagString: Untagged
@@ -68,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 872562011
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1560f21f294b3194eadcbe074cdc6ca3, type: 3}
   m_Color: {r: 0.9056604, g: 0.2509804, b: 0, a: 0.80784315}
@@ -127,3 +128,15 @@ BuoyancyEffector2D:
   m_FlowAngle: 0
   m_FlowMagnitude: 0
   m_FlowVariation: 0
+--- !u!114 &-1028288071339526624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609175754598068398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558e99dc92873f94c8f0e7fda5fd7da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7925988743326330883}
   - component: {fileID: 7925988743326330908}
   - component: {fileID: 7925988743326330909}
+  - component: {fileID: -2976107282201333946}
   m_Layer: 10
   m_Name: Fireball
   m_TagString: Untagged
@@ -152,3 +153,15 @@ PolygonCollider2D:
       - {x: 0.00000004371139, y: -0.5}
       - {x: 0.43301272, y: -0.24999996}
       - {x: 0.43301272, y: 0.24999996}
+--- !u!114 &-2976107282201333946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7925988743326330881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558e99dc92873f94c8f0e7fda5fd7da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

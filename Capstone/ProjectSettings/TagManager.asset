@@ -19,7 +19,7 @@ TagManager:
   - Ground
   - Player
   - Fireball
-  - 
+  - Foreground
   - 
   - 
   - 
@@ -52,4 +52,10 @@ TagManager:
     locked: 0
   - name: Platforms
     uniqueID: 4093713343
+    locked: 0
+  - name: Foreground
+    uniqueID: 1910778079
+    locked: 0
+  - name: Foreground2
+    uniqueID: 2945741271
     locked: 0

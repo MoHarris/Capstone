@@ -2662,6 +2662,16 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 552779938724938614, guid: 784f0af11db7b0042bf5664e81aa7a2a,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -498688649
+      objectReference: {fileID: 0}
+    - target: {fileID: 552779938724938614, guid: 784f0af11db7b0042bf5664e81aa7a2a,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 784f0af11db7b0042bf5664e81aa7a2a, type: 3}
 --- !u!1001 &340078540
@@ -5027,11 +5037,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.047
       objectReference: {fileID: 0}
-    - target: {fileID: 5091301942078735388, guid: 22bd40bd99842df4d80ffc62e1c4ed1f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7200110408085959348, guid: 22bd40bd99842df4d80ffc62e1c4ed1f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5048,6 +5053,11 @@ PrefabInstance:
       value: -0.294
       objectReference: {fileID: 0}
     - target: {fileID: 1429734350473480394, guid: 22bd40bd99842df4d80ffc62e1c4ed1f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5091301942078735388, guid: 22bd40bd99842df4d80ffc62e1c4ed1f,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -8397,7 +8407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1869468101}
-  cameraDistance: 2
+  cameraDistance: 2.5
 --- !u!82 &927744052
 AudioSource:
   m_ObjectHideFlags: 0

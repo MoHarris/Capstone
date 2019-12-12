@@ -56,14 +56,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {   
-        if (isGrounded == false)
-        {
-            anim.SetBool("isJumping", false);
-        }
-         else
-        {
-         anim.SetBool("isJumping", true);
-         }
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded == true)
         {
@@ -80,7 +72,14 @@ public class PlayerMovement : MonoBehaviour
                 isGliding = true;
             }
 
-
+        if (isGrounded == false)
+        {
+            anim.SetBool("isJumping", false);
+        }
+         else
+        {
+         anim.SetBool("isJumping", true);
+         }
         }
 
         if (Input.GetKey(KeyCode.DownArrow) && !isGrounded)

@@ -24,9 +24,12 @@ public class PlayerMovement : MonoBehaviour
     public bool isGliding;
     //Scene scene = SceneManager.GetActiveScene();
 
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         originalGravityScale = rb.gravityScale;
         isGliding = false;
@@ -52,7 +55,16 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Update()
-    {
+    {   
+        if (isGrounded == false)
+        {
+            anim.SetBool("isJumping", false);
+        }
+         else
+        {
+         anim.SetBool("isJumping", true);
+         }
+
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded == true)
         {
             rb.velocity = Vector2.up * jumpForce;
@@ -82,6 +94,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             isGliding = false;
+           
 
             rb.gravityScale = originalGravityScale;
 
@@ -95,6 +108,14 @@ public class PlayerMovement : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+        if(moveInput == 0)
+        {
+            anim.SetBool("isWalking", false);
+		}
+        else 
+        {
+        anim.SetBool("isWalking", true);
+		}
     }
 
     void Flip()

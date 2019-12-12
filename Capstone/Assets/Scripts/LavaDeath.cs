@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LavaDeath : MonoBehaviour
 {
     
-
+    public static double scoreValue;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,15 @@ public class LavaDeath : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            ScoreScript.scoreValue -= 100;
+            //PlayerPrefs.SetInt("Score: ", ScoreScript.scoreValue);
         }
     }
 }

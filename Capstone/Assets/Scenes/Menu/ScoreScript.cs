@@ -21,11 +21,11 @@ public class ScoreScript: MonoBehaviour
 
         if (gameInitiated)
         {
-            scoreValue += 100;
+            //scoreValue += 100;
         }
         else
         {
-            scoreValue = 1000;
+            scoreValue = 10000;
             gameInitiated = true;
         }
     }
